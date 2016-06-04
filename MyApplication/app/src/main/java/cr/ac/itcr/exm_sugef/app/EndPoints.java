@@ -10,6 +10,15 @@ public class EndPoints {
      *
      */
 
-    public static final String BASE_URL = "192.168.0.5:9000";
-    public static final String NEW_TRANSACTION = "192.168.0.5:9000";
+    public static final String BASE_URL = "http://192.168.0.5:9000";
+    public static final String NEW_TRANSACTION = BASE_URL + "/api/sugef/transaction/new";
+    public static final String NEW_USER = BASE_URL + "/api/sugef/users/new";
+    public static final String GET_TRANSACTIONS = BASE_URL + "/api/sugef/transaction/all";
+    public static final String GET_USERS = BASE_URL + "/api/sugef/users/all";
+    public static final String GET_TRANSACTION = BASE_URL + "/api/sugef/transaction/:id";
+    public static final String GET_USER = BASE_URL + "/api/sugef/users/:user";
+    public static final String EDIT_TRANSACTION = BASE_URL + "/api/sugef/transaction/edit/:idTransaction";
+    public static final String DELETE_TRANSACTION = BASE_URL + "/api/sugef/transaction/delete/:idTransaction";
+    public static final String DISABLE_TRANSACTION = BASE_URL + "/api/sugef/transaction/disable";
+
 }
