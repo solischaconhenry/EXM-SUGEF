@@ -7,7 +7,7 @@ exports.getUsers = function(eRequest, eResponse) {
 };
 
 exports.getUserById = function(eRequest, eResponse) {
-    usersService.getUserById(eRequest.params.id, function(data){
+    usersService.getUserById(eRequest.params.user, function(data){
         eResponse.send(data);
     });
 };

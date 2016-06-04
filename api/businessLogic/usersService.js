@@ -11,9 +11,9 @@ exports.getUsers = function(callback) {
 	});
 };
 
-exports.getUserById = function(idUser, callback) {
+exports.getUserById = function(user, callback) {
 	var params = {
-		query: {_id: idUser},
+		query: {user: user},
 		collection: 'users'
 	};
 	repository.getDocument(params, function(data){

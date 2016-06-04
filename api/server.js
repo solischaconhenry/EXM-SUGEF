@@ -147,7 +147,7 @@ app.get('/api/sugef/users/all', usersController.getUsers);
  statusCode // éxito: 200, fracaso: 400
  }
  */
-app.get('/api/sugef/users/:idUser', usersController.getUserById);
+app.get('/api/sugef/users/:user', usersController.getUserById);
 
 
 

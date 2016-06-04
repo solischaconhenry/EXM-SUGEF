@@ -58,8 +58,8 @@ exports.deleteTransaction = function(idTransaction, callback) {
 exports.disableTransaction = function(data, callback) {
     var params = {
         query: {_id: data.idTransaction},
-        updateQuery: {$set: {estado: data.estado}},
-        collection: 'usuarios'
+        updateQuery: {$set: {active: data.active}},
+        collection: 'transactions'
     };
 
     repository.updateDocument(params, function(res) {
