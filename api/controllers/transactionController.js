@@ -22,7 +22,7 @@ exports.newTransaction = function(eRequest, eResponse) {
 };
 
 exports.editTransaction = function(eRequest, eResponse) {
-    transactionService.editTransaction(eRequest.params.idTransaction, eRequest.body, function(data){
+    transactionService.editTransaction(eRequest.body, function(data){
         eResponse.send(data);
     });
 };

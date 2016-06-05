@@ -81,7 +81,7 @@ Edita un evento
            message // éxito: 200, fracaso: 400
         }
   */
-app.put('/api/sugef/transaction/edit/:idTransaction', transactionController.editTransaction);
+app.put('/api/sugef/transaction/edit', transactionController.editTransaction);
 
 /*
 Elimina un evento

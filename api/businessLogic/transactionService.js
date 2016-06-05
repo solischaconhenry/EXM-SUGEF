@@ -33,13 +33,13 @@ exports.newTransaction = function(doc, callback) {
     });
 }
 
-exports.editTransaction = function(idTransaction, doc, callback) {
+exports.editTransaction = function(data, callback) {
     var params = {
-        query: {_id: idTransaction},
-        updateQuery: {$set: doc},
+        query: {_id: data.idTransaction},
+        updateQuery: {$set: {date: data.date, type: data.type, rode: data.rode}},
         collection: 'transactions'
     };
-    console.log(doc);
+    console.log(data);
     repository.updateDocument(params, function(res) {
         callback(res);
     });
