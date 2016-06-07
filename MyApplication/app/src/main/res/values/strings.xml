@@ -27,4 +27,6 @@
     <string name="dateEdit">Date</string>
     <string name="RodeEdit">Rode</string>
     <string name="disable">Disable</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
 </resources>
